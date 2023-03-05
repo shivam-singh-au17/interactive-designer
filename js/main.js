@@ -92,31 +92,31 @@ editor.Panels.addPanel({ id: "devices-c" })
       attributes: { title: "Export PDF", id: "exportPDF" },
       className: "exportPDF fa fa-file-pdf-o",
     },
-    {
-      id: "savePage",
-      attributes: { title: "Save", id: "savePage" },
-      className: "fa fa-save",
-    },
-    {
-      id: "viewAllPage",
-      attributes: { title: "View All Page", id: "viewAllPage" },
-      className: "fa fa-list",
-    },
-    {
-      id: "show-json",
-      className: "btn-show-json",
-      label: "JSON",
-      context: "show-json",
-      command(editor) {
-        editor.Modal.setTitle("Components JSON")
-          .setContent(
-            `<textarea style="width:100%; height: 250px;">
-            ${JSON.stringify(editor.getComponents())}
-          </textarea>`
-          )
-          .open();
-      },
-    },
+    // {
+    //   id: "savePage",
+    //   attributes: { title: "Save", id: "savePage" },
+    //   className: "fa fa-save",
+    // },
+    // {
+    //   id: "viewAllPage",
+    //   attributes: { title: "View All Page", id: "viewAllPage" },
+    //   className: "fa fa-list",
+    // },
+    // {
+    //   id: "show-json",
+    //   className: "btn-show-json",
+    //   label: "JSON",
+    //   context: "show-json",
+    //   command(editor) {
+    //     editor.Modal.setTitle("Components JSON")
+    //       .setContent(
+    //         `<textarea style="width:100%; height: 250px;">
+    //         ${JSON.stringify(editor.getComponents())}
+    //       </textarea>`
+    //       )
+    //       .open();
+    //   },
+    // },
   ]);
 
 var el = document.getElementById("exportPDF");
