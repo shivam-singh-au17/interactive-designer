@@ -2,143 +2,105 @@
 <html lang="en">
 
 <head>
-  <title>Interactive Designer</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-</head>
+    <meta charset="UTF-8">
+    <title>Interactive Designer</title>
+
+    <link rel='stylesheet' href='./css/home.css'> 
+    <link rel="stylesheet" href="./css/codeEditor.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="./css/styleBg.css">
+
+    
+    <script src='./js/home.js'></script>
+    <script src='./js/codeEditor.js'></script>
+    <script src='./js/postCssParser.js'></script>
+    <script src="./js/webPage.js"></script>
+    <script src="./js/basicBlocks.js"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/countdown.js"></script>
+    <script src="./js/forms.js"></script>
+    <script src="./js/imageEditor.js"></script>
+    <script src="./js/zipExport.js"></script>
+    <script src="./js/customCode.js"></script>
+    <script src="./js/toolbox.js"></script>
+    <script src="./js/tooltip.js"></script>
+    <script src="./js/typed.js"></script>
+    <script src="./js/table.js"></script>
+    <!-- <script src="./js/table2.js"></script> --> 
+    <script src="./js/styleBg.js"></script>
+    <script src="./js/tabs.js"></script>
+    <script src="./js/new_components.js"></script>
+    <script src="./js/highchart/pie_chart.js"></script>
+    <script src="./js/highchart/line_chart.js"></script>
+    <script src="./js/highchart/bar_chart.js"></script>
+    <script src="./js/highchart/area_chart.js"></script>
 
 <body>
-  <div class="container mt-4">
-    <div class="card">
-      <div class="card-body">
-        <div class="row">
-          <div class="col-lg-6">
-            <h2>Page Details</h2>
+    <div id="editor">
+        <h1>Welcome to Interactive Designer</h1>
+  
+        <!-- `<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="2000">
+            <div class="carousel-inner"> 
+             <div class="carousel-item active" style="margin: 10px 0px;"> 
+               <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(45).jpg" alt="First slide">
+                </div>
+             <div class="carousel-item" style="margin: 10px 0px;">
+              <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(46).jpg" alt="Second slide"> 
+             </div>
+             <div class="carousel-item" style="margin: 10px 0px;">
+              <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(47).jpg" alt="Third slide">
+             </div> 
+           </div> ` -->
+
+        <!-- <div class="carousel">
+            <h1>Welcome to Interactive Designer</h1>
+            <a href="abv.html">
+            <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(45).jpg" data-editor-link="http://image1.com" class="slide"/>
+        </a>
+        <a  href="abv.html">
+            <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(46).jpg" data-editor-link="http://image2.com" class="slide"/>
+        </a>
+           <a  href="abv.html"> <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(47).jpg" data-editor-link="http://image3.com" class="slide"/>
+           </a></div> --> 
+
+              <!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="2000">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" style="margin: 10px 0px;">
+                    <a href="" class="d-block w-100" style="padding: 10px 0px;">
+                        <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(45).jpg" alt="First slide">
+                    </a>
+                  </div>
+                  <div class="carousel-item"  style="margin: 10px 0px;">
+                    <a href="" class="d-block w-100" style="padding: 10px 0px;">
+                        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(46).jpg" alt="Second slide">
+                    </a>
+                  </div>
+                  <div class="carousel-item" style="margin: 10px 0px;">
+                    <a class="d-block w-100" href="" style="padding: 10px 0px;">
+                      <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(47).jpg" alt="Third slide">
+                    </a>
+                  </div>
+                </div> -->
+                <!-- <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a> -->
+              </div>
+
+            </div> 
           </div>
-          <div class="col-lg-6">
-            <button class="btn btn-primary float-right" data-toggle="modal" data-target="#pageAdd"
-              data-backdrop='static' data-keyboard='false'>Add <i class="fa fa-plus"></i></button>
-          </div>
-        </div>
-        <table class="table table-bordered">
-          <thead>
-            <tr>
-              <th>Page Name</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            <script>
-              var getallpage = localStorage.getItem('all-page');
-              var allpage = JSON.parse(getallpage);
-              if (allpage == null) {
-                const addDefaultData = [{
-                  name: 'Home',
-                  data: '<h1>Welcome to Interactive Designer</h1>'
-                }]
-                localStorage.setItem('all-page', JSON.stringify(addDefaultData));
-                getallpage = localStorage.getItem('all-page');
-                allpage = JSON.parse(getallpage);
-              }
-              allpage.map((i, index) => {
-                document.write("<tr>");
-                document.write("<td>" + i.name + "</td>");
-                document.write("<td>");
-                document.write('<a href="javascript:void(0)" class="mr-4" onclick="editPage(' + index + ')"><i class="fa fa-pencil"></i></a>');
-                document.write('<a href="javascript:void(0)" onclick="removePage(' + index + ')"><i class="fa fa-trash"></i></a>');
-                document.write("</td>");
-                document.write("</tr>");
-              })  
-            </script>
-          </tbody>
-        </table>
-      </div>
+
     </div>
-  </div>
-
-  <div class="modal fade" id="pageAdd" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Add Page</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <label for="pagename">Page Name*</label>
-              <input type="text" class="form-control" name="pagename" placeholder="Enter page name" id="pagename-input">
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" onclick="AddPage()">Add</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script>
-    function AddPage() {
-      var pagenameinput = document.getElementById("pagename-input");
-      var name = pagenameinput.value;
-      if (name == '' || name == ' ' || name == 'null' || name == 'undefined') {
-        alert('Page name required');
-        return false
-      } else {
-        for (var i = 0; i < allpage.length; i++) {
-          if (allpage[i].name === name) {
-            alert(name + ' ' + 'page already added');
-            return false
-          }
-        }
-        allpage.push({
-          name: name,
-          data: '<h1>Welcome to Interactive Designer</h1>'
-        })
-        localStorage.setItem('all-page', JSON.stringify(allpage));
-        alert('Page added');
-        pagenameinput.value = "",
-          $('#pageAdd').modal('hide');
-        location.reload();
-      }
-    }
-
-    function editPage(index) {
-      const singleItem = allpage[index];
-      localStorage.setItem('single-page', JSON.stringify(singleItem));
-      window.location.replace("main.html");
-    }
-
-    function removePage(index) {
-      const singleItem = allpage[index];
-      const x = confirm('Are you sure you want to delete?');
-      if (x) {
-        allpage.splice(allpage.findIndex(a => a.name === singleItem.name), 1);
-        localStorage.setItem('all-page', JSON.stringify(allpage));
-        alert('Page deleted');
-        location.reload();
-        return true;
-      } else {
-        return false;
-      }
-    }
-  </script>
+    
+    <script src="./js/html2pdf.js"></script>
+    <script src="./js/main.js"></script>
+    <!-- <script src="./js/grapesjs-lory-slider.min.js"></script> -->
+    <!-- <script src="./js/grapesjs-plugin-carousel.min.js"></script> --> 
 </body>
 
 </html>
