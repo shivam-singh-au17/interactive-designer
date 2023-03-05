@@ -151,61 +151,61 @@ function generatePDF() {
 // var singlePageData = JSON.parse(localStorage.getItem("single-page"));
 // editor.setComponents(singlePageData.data);
 
-function savePage() {
-  var htmlContent = editor.getHtml();
-  var cssContent = editor.getCss();
-  htmlContent =
-    "<html><head><style>" +
-    cssContent +
-    "</style></head>" +
-    htmlContent +
-    "</html>";
-  var getallpage = localStorage.getItem("all-page");
-  var allpage = JSON.parse(getallpage);
-  for (var i = 0; i < allpage.length; i++) {
-    if (allpage[i].name === singlePageData.name) {
-      allpage.splice(
-        allpage.findIndex((a) => a.name === singlePageData.name),
-        1
-      );
-      allpage.push({
-        name: singlePageData.name,
-        data: htmlContent,
-      });
-      localStorage.setItem("all-page", JSON.stringify(allpage));
-      alert(singlePageData.name + " " + "page save successfully");
-      window.location.replace("page.html");
-    }
-  }
-}
+// function savePage() {
+//   var htmlContent = editor.getHtml();
+//   var cssContent = editor.getCss();
+//   htmlContent =
+//     "<html><head><style>" +
+//     cssContent +
+//     "</style></head>" +
+//     htmlContent +
+//     "</html>";
+//   var getallpage = localStorage.getItem("all-page");
+//   var allpage = JSON.parse(getallpage);
+//   for (var i = 0; i < allpage.length; i++) {
+//     if (allpage[i].name === singlePageData.name) {
+//       allpage.splice(
+//         allpage.findIndex((a) => a.name === singlePageData.name),
+//         1
+//       );
+//       allpage.push({
+//         name: singlePageData.name,
+//         data: htmlContent,
+//       });
+//       localStorage.setItem("all-page", JSON.stringify(allpage));
+//       alert(singlePageData.name + " " + "page save successfully");
+//       window.location.replace("page.html");
+//     }
+//   }
+// }
 
-function viewAllPage() {
-  console.log("view");
-  var htmlContent = editor.getHtml();
-  var cssContent = editor.getCss();
-  htmlContent =
-    "<html><head><style>" +
-    cssContent +
-    "</style></head>" +
-    htmlContent +
-    "</html>";
-  var getallpage = localStorage.getItem("all-page");
-  var allpage = JSON.parse(getallpage);
-  for (var i = 0; i < allpage.length; i++) {
-    if (allpage[i].name === singlePageData.name) {
-      allpage.splice(
-        allpage.findIndex((a) => a.name === singlePageData.name),
-        1
-      );
-      allpage.push({
-        name: singlePageData.name,
-        data: htmlContent,
-      });
-      localStorage.setItem("all-page", JSON.stringify(allpage));
-      window.location.replace("page.html");
-    }
-  }
-}
+// function viewAllPage() {
+//   console.log("view");
+//   var htmlContent = editor.getHtml();
+//   var cssContent = editor.getCss();
+//   htmlContent =
+//     "<html><head><style>" +
+//     cssContent +
+//     "</style></head>" +
+//     htmlContent +
+//     "</html>";
+//   var getallpage = localStorage.getItem("all-page");
+//   var allpage = JSON.parse(getallpage);
+//   for (var i = 0; i < allpage.length; i++) {
+//     if (allpage[i].name === singlePageData.name) {
+//       allpage.splice(
+//         allpage.findIndex((a) => a.name === singlePageData.name),
+//         1
+//       );
+//       allpage.push({
+//         name: singlePageData.name,
+//         data: htmlContent,
+//       });
+//       localStorage.setItem("all-page", JSON.stringify(allpage));
+//       window.location.replace("page.html");
+//     }
+//   }
+// }
 
 // const prop = editor.StyleManager.getProperty('typography', 'font-family');
 // prop.set("options", [
